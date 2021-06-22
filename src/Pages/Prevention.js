@@ -58,7 +58,7 @@ function Prevention(){
                                 </div> 
 
                                 <div> 
-                                <p style= {{ textAlign: 'justify'}}>
+                                <p style= {{ textAlign: 'justify'}} >
                                     Dans cette documentation vous trouverez la majorité des vulnérabilités les plus connues des réseaux ainsi que leurs principales solutions afin de les renforcer et ainsi de sécuriser le réseau de votre entreprise.  
                                     Une vulnérabilité est une faille de sécurité qui provient souvent d’une faiblesse lors de la confection du système d’information (SI), d’un logiciel ou d’un périphérique. 
                                     Elles peuvent entraîner des cyberattaques c’est pourquoi il est important de les étudier et de les sécuriser. 
