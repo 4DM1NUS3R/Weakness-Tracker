@@ -1,0 +1,101 @@
+body {
+  /*background: rgb(9, 67, 235);
+  background: linear-gradient(
+    14deg,
+    rgba(9, 67, 235, 0.785049053801208) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );*/
+
+  background: rgb(9, 235, 54);
+  background: linear-gradient(
+    14deg,
+    rgba(9, 235, 54, 0.785049053801208) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.bocal {
+  border-radius: 8px;
+  background-color: white;
+
+  position: fixed;
+  top: 11%;
+  bottom: 5%;
+  left: 4%;
+  right: 4%;
+
+  /*margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+
+  width: 90vw;
+  height: 80vh;*/
+
+  padding: 2%;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  border-radius: 4px;
+  width: 600px;
+  height: 380px;
+}
+
+.containerSlide {
+  width: 600px;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+.containerSlide img {
+  height: 380px;
+}
+
+.reseauxGlobal {
+  margin-top: 20%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.iconReseaux {
+  color: rgb(9, 126, 58);
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.iconReseaux:hover {
+  color: rgb(4, 182, 78);
+}
+
+.paraphintro {
+  width: 320px;
+  margin-left: 8%;
+}
+
+.intro {
+  text-align: left;
+  font-size: 18px;
+}
+h2 {
+  font-size: 35px;
+}
+
+.subdivision {
+  margin-left: 10%;
+  margin-top: 12%;
+  display: flex;
+  justify-content: space-around;
+}

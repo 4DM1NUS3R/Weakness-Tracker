@@ -1,0 +1,17 @@
+a {
+  text-decoration: none;
+  transition: 400ms;
+}
+
+.btn {
+  background-color: rgb(4, 182, 78);
+  border: rgb(4, 182, 78);
+}
+
+.nomnavbar {
+  transition: 200ms;
+}
+
+.nav-link:hover {
+  color: rgb(4, 182, 78);
+}
