@@ -61,14 +61,20 @@ body {
   border-radius: 13px;
 }
 
-.titresommaire {
+.titresommaire,
+a {
   margin-bottom: 10px;
   transition: 200ms;
 }
 
-.titresommaire:hover {
+.titresommaire:hover,
+a:hover {
   color: rgb(4, 182, 78);
   cursor: pointer;
+}
+
+a {
+  color: inherit;
 }
 
 .clickos {
