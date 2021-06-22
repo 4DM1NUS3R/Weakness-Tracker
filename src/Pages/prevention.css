@@ -80,7 +80,7 @@ a {
 .clickos {
   background-color: white;
   border: solid rgb(4, 182, 78) 1px;
-  color: rgb(4, 182, 78);
+  color: /*rgb(4, 182, 78)*/ black;
 
   transition: 220ms;
 }
