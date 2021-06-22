@@ -32,7 +32,6 @@ body {
 }
 
 .sommaire {
-  margin-top: 10%;
   /*margin-left: 8%;
   margin-right: 9%;*/
 
@@ -46,6 +45,7 @@ body {
   overflow-y: auto;
   flex-grow: 2;
   width: 60%;
+  padding-right: 10px;
 }
 
 ::-webkit-scrollbar {
@@ -69,4 +69,17 @@ body {
 .titresommaire:hover {
   color: rgb(4, 182, 78);
   cursor: pointer;
+}
+
+.clickos {
+  background-color: white;
+  border: solid rgb(4, 182, 78) 1px;
+  color: rgb(4, 182, 78);
+
+  transition: 220ms;
+}
+
+.clickos:hover {
+  background-color: rgb(9, 126, 58);
+  color: white;
 }
