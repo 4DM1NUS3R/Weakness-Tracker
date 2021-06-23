@@ -88,4 +88,5 @@ a {
 .clickos:hover {
   background-color: rgb(9, 126, 58);
   color: white;
+  border: solid rgb(9, 126, 58) 1px;
 }

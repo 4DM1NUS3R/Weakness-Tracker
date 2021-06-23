@@ -141,7 +141,7 @@ function Prevention() {
                                                 <Accordion.Collapse eventKey="0">
                                                     <Card.Body style={{ textAlign: 'justify' }}>
                                                         C’est souvent le chemin utilisé pour propager un ransomware avec des techniques comme le phishing.
-                                                        Les spams sont donc un réel danger pour les entreprises. Les fausses factures par exemple sont souvent utilisé
+                                                        Les spams sont donc un réel danger pour les entreprises. Les fausses factures par exemple sont souvent utilisées
                                                         afin de piéger des employés. Il faut donc bien sécuriser les boites mails afin qu’elles trient correctement les messages
                                                         frauduleux (filtres anti-spam et graymail).
                                                     </Card.Body>
@@ -182,7 +182,7 @@ function Prevention() {
                                                 </Card.Header>
                                                 <Accordion.Collapse eventKey="2">
                                                     <Card.Body style={{ textAlign: 'justify' }}>
-                                                        Utilisation de fichiers journaux afin de garder une trace de toute activité effectuer sur le réseau.
+                                                        Utilisation de fichiers journaux afin de garder une trace de toute activité effectuée sur le réseau.
                                                         Ils enregistrent les données pour permettre la restauration de certains fichiers s'ils sont endommagés
                                                         ou supprimés et l’enregistrement du comportement des employés sur le réseau. Ils sont donc un soutien important
                                                         contre des ransomwares ou des injections SQL par exemple.
@@ -204,8 +204,8 @@ function Prevention() {
                                                 <Accordion.Collapse eventKey="3">
                                                     <Card.Body style={{ textAlign: 'justify' }}>
                                                         Utilisation de firewall permettant de protéger un ordinateur ou un réseau contre les intrusions provenant d’un réseau inconnu.
-                                                        Le pare-feu permet de filtrer les paquets de données transmis, de filtrer les connexions au réseau (authentification des utilisateurs)
-                                                        et d’examiner tout le traffic. Ils vérifient la validité des demandes de connexion aux serveurs, masque le réseau que de l’entreprise
+                                                        Le pare-feu permet de filtrer les paquets de données transmises, de filtrer les connexions au réseau (authentification des utilisateurs)
+                                                        et d’examiner tout le traffic. Ils vérifient la validité des demandes de connexion aux serveurs, masquent le réseau de l’entreprise
                                                         et interceptent les attaques envers les serveurs web de l’entreprise ou de l’hébergeur. Ils permettent également le chiffrement des
                                                         données lors des échanges entre les clients et les serveurs afin de contrer les attaques du type “man in the middle”.
                                                     </Card.Body>
@@ -226,9 +226,9 @@ function Prevention() {
                                                 </Card.Header>
                                                 <Accordion.Collapse eventKey="4">
                                                     <Card.Body style={{ textAlign: 'justify' }}>
-                                                        Si votre entreprise contient des données personnelles, des législations existes afin de savoir si celles-ci
-                                                        sont sécurisé (RGPD). Cette technique permet de savoir si les données échangées sont authentiques et issues d’une
-                                                        source fiable mais aussi d’échangé des données en toute sécurité entre un navigateur et un serveur.
+                                                        Si votre entreprise contient des données personnelles, des législations existent afin de savoir si celles-ci
+                                                        sont sécurisées (RGPD). Cette technique permet de savoir si les données échangées sont authentiques et issues d’une
+                                                        source fiable mais aussi d’échanger des données en toute sécurité entre un navigateur et un serveur.
                                                     </Card.Body>
                                                 </Accordion.Collapse>
                                             </Card>
@@ -247,10 +247,10 @@ function Prevention() {
                                                 <Accordion.Collapse eventKey="5">
                                                     <Card.Body style={{ textAlign: 'justify' }}>
                                                         La sécurisation des terminaux (endpoint) est importante afin de protéger les réseaux professionnels qui sont accessibles
-                                                        depuis tout type d’appareil externe (téléphones mobiles, tablettes, ordinateur portable) car on sait que près de 70% des
-                                                        attaques sont effectuer sur les terminaux. Il existe des plateformes de protection de terminaux afin d’analyser le
-                                                        matériel externe aux réseaux que pourrait ramener un employé. Si vous ne voulez pas de solution afin de sécuriser les
-                                                        terminaux alors n’autoriser jamais un employé à se connecter au réseau avec son propre matériel mais seulement avec celui
+                                                        depuis tout type d’appareil externe (téléphones mobiles, tablettes, ordinateurs portables) car on sait que près de 70% des
+                                                        attaques sont effectuées sur les terminaux. Il existe des plateformes de protection de terminaux afin d’analyser le
+                                                        matériel externe au réseau que pourrait ramener un employé. Si vous êtes rétissant(e) à l'idée de sécuriser les
+                                                        terminaux alors n’autorisez jamais un employé à se connecter au réseau avec son propre matériel mais seulement avec celui
                                                         de l’entreprise.
                                                     </Card.Body>
                                                 </Accordion.Collapse>
@@ -293,9 +293,9 @@ function Prevention() {
                                                 </Card.Header>
                                                 <Accordion.Collapse eventKey="7">
                                                     <Card.Body style={{ textAlign: 'justify' }}>
-                                                        Cette supervision permettra de faire des rapports continue via l’examen des pares-feux, des anti-virus ainsi que de l’ensemble
-                                                        des machines connecté aux réseaux afin de détecter très rapidement et simplement les failles et les possibles erreurs.
-                                                        Pour cela, des certains logiciels existe afin de vous simplifier le travail.
+                                                        Cette supervision permettra de faire des rapports continus via l’examen des pares-feux, des anti-virus ainsi que de l’ensemble
+                                                        des machines connectées au réseau afin de détecter très rapidement et simplement les failles et les possibles erreurs.
+                                                        Pour cela, certains logiciels existent afin de vous simplifier le travail.
                                                     </Card.Body>
                                                 </Accordion.Collapse>
                                             </Card>
@@ -315,7 +315,7 @@ function Prevention() {
                                                 <Accordion.Collapse eventKey="8">
                                                     <Card.Body style={{ textAlign: 'justify' }}>
                                                         Les failles humaines sont énormément exploitées afin d’attaquer un réseau, il est donc important que vos collaborateurs soient
-                                                        et restent informer sur les différents dangers d’Internet. Il faut contrer l’ingénierie sociale et pour cela rien de mieux qu’une
+                                                        et restent informés sur les différents dangers d’Internet. Il faut contrer l’ingénierie sociale et pour cela rien de mieux qu’une
                                                         formation de vos employés sur le sujet.
                                                     </Card.Body>
                                                 </Accordion.Collapse>
@@ -334,8 +334,8 @@ function Prevention() {
                                                 </Card.Header>
                                                 <Accordion.Collapse eventKey="9">
                                                     <Card.Body style={{ textAlign: 'justify' }}>
-                                                        Cette méthode utilise la base du DHCP snooping pour vérifier la conformité des réponses de chaque paquet ARP envoyées.
-                                                        On compare l’adresse IP émettrice du paquet a celle attribuée par le serveur DHCP mais si les adresses ne sont pas les mêmes
+                                                        Cette méthode utilise la base du DHCP snooping pour vérifier la conformité des réponses de chaque paquet ARP envoyé.
+                                                        On compare l’adresse IP émettrice du paquet à celle attribuée par le serveur DHCP mais si les adresses ne sont pas les mêmes
                                                         alors le paquet est supprimé.
                                                     </Card.Body>
                                                 </Accordion.Collapse>
