@@ -21,8 +21,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start-back": "cd Slack-back && flask run --no-debugger",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test-back": "cd Slack-back && flask test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -42,5 +44,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:5000"
 }
