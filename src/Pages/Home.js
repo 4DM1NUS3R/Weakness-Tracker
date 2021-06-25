@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from './Home.css';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
+import data from "bootstrap/js/src/dom/data";
 
 function Home(){
     const proprietes = {
@@ -12,7 +13,25 @@ function Home(){
       arrows: false
     }
 
-    return(
+
+
+    //Exemple pour toi walid
+    const [vari, setVari] = useState("test") // on commence par initialiser la valeur de vari
+    useEffect(() => { // on définie ensuite ce qu'il se passse lors du changement de valeur
+
+        fetch("/test").then((res) => { // on récup la route
+        return res.json() // on transsforme en json
+
+        }).then((data) => {
+            setVari(data["test"]) // on applique la valeur grace au setter définie plus haut
+        })
+
+    })
+
+
+
+
+return(
         <div className="page">
 
         
@@ -45,6 +64,9 @@ function Home(){
                   <div className="paraphintro"> 
                     <p className="intro"> <h2 >Weakness tracker </h2> est l'outil de scan qui vous permettra d'identifier les vulnérabilités de votre réseau. <br/> <br/>
                     Parcourez le site pour essayer nos services !</p> <br/>
+
+                       <p>{vari}</p>
+
                     <button type="button" class="btn btn-success btn-lg">
                       Lancer le scan 
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16" className="m-2">
