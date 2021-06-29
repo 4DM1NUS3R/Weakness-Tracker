@@ -20,7 +20,7 @@ function Home(){
     useEffect(() => { // on définie ensuite ce qu'il se passse lors du changement de valeur
 
         fetch("/test").then((res) => { // on récup la route
-        return res.json() // on transsforme en json
+        return res.json() // on transforme en json
 
         }).then((data) => {
             setVari(data["test"]) // on applique la valeur grace au setter définie plus haut
