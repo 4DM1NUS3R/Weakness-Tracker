@@ -5,6 +5,7 @@ class Port:
     ports = {"known": [], "dynamic": []}
 
     def __init__(self, path):
+        self.ports = {"known": [], "dynamic": []}
         try:
             port_file = open("%s/nmap.conf" % path, "r")
             port_reg = re.findall("[0-9]+/", port_file.read())

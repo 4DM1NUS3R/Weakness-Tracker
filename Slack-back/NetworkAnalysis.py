@@ -6,6 +6,7 @@ class NetworkAnalysis:
     network = {}  # format {"hostname1": ComputerAnalysis1, "hostname2": ComputerAnalysis2}
 
     def __init__(self, path="D:/efrei/cours/L3/BootCamp/fouretout"):
+        self.network = {}
         for file in os.listdir(path):
             comp_analysis = ComputerAnalysis.ComputerAnalysis("{}/{}".format(path, file))
             comp_value = {"hostname": comp_analysis.hostname.hostname,
@@ -18,8 +19,9 @@ class NetworkAnalysis:
                                      "DNS": {"state": comp_analysis.dns.is_dns, "description": "work in progress"}}
                           }
             self.network[comp_analysis.hostname.hostname] = comp_value
+            comp_analysis.reset()
 
 
-#test
-#net = NetworkAnalysis()
-#print(net.network)
+# test
+# net = NetworkAnalysis()
+# print(net.network)

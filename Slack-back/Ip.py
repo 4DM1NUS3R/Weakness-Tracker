@@ -6,6 +6,8 @@ class Ip:
     forwarding = None
 
     def __init__(self, path):
+        self.ip = []
+        self.forwarding = None
         try:
             ip_file = open("%s/ip.conf" % path, "r")
             for ip in ip_file:

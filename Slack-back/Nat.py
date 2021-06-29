@@ -6,6 +6,8 @@ class Nat:
     flt_policies = {"ACCEPT": [], "DROP": []}
 
     def __init__(self, path):
+        self.nat_policies = {"ACCEPT": [], "DROP": []}
+        self.flt_policies = {"ACCEPT": [], "DROP": []}
         try:
             nat_tab_file = open("%s/nat.conf" % path, "r")
             flt_tab_file = open("%s/filter.conf" % path, "r")

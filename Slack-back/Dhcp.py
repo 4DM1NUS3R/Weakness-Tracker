@@ -1,10 +1,8 @@
-PATH = "D:/efrei/cours/L3/BootCamp/fouretout"
-
-
 class Dhcp:
     is_dhcp = False
 
     def __init__(self, path):
+        self.is_dns = False
         try:
             dhcp_file = open("%s/status.conf" % path, "r")
             dhcp_line = ""

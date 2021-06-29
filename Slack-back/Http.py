@@ -2,6 +2,7 @@ class Http:
     is_http = False
 
     def __init__(self, path):
+        self.is_http = False
         try:
             http_file = open("%s/status.conf" % path, "r")
             http_line = ""
