@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/test')
 def hello_world():
-    return flask.jsonify({'test': 'Hello World!'})
+    return Flask.jsonify({'test': 'Hello World!'})
 
 
 @app.route('/WeaknessTracker/dns/basic')
