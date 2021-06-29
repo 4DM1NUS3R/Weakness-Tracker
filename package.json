@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start-back": "cd Slack-back && flask run --no-debugger",
+    "start-back": "cd Slack-back && flask run",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test-back": "cd Slack-back && flask test",
