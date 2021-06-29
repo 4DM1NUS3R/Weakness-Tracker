@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/test')
 def hello_world():
-    return Flask.jsonify({'test': 'Hello World!'})
+    return flask.jsonify({'test': 'Hello World!'})
 
 
 if __name__ == '__main__':
