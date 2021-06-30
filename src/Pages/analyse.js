@@ -4,7 +4,7 @@ import styles from './analyse.css';
 
 function Analyse() {
 
-    const nombres = ['one', 'two', 'three', 'viva l Algérie']
+    const nombres = ['one', 'two', 'three', 'viva l Algérie', 'iiish', 'nooon']
 
     const [listePC, setlistePC] = useState({}) // on commence par initialiser la valeur de vari
     useEffect(() => { // on définie ensuite ce qu'il se passse lors du changement de valeur
@@ -18,6 +18,7 @@ function Analyse() {
 
     })
     
+    console.log(listePC["VM-ALPHA"])
     
 
     return (
@@ -38,7 +39,7 @@ function Analyse() {
                             Terminaux
                         </h3>
 
-                        <div>
+                        <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap', marginLeft: '2%', marginRight: '2%'}}>
                             {nombres.map((user) => (
                                 <div className="user">{user}</div>
                             ))}
