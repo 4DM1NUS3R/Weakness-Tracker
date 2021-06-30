@@ -4,10 +4,12 @@ import styles from './analyse.css';
 
 function Analyse() {
 
+    const nombres = ['one', 'two', 'three', 'viva l Algérie']
+
     const [listePC, setlistePC] = useState({}) // on commence par initialiser la valeur de vari
     useEffect(() => { // on définie ensuite ce qu'il se passse lors du changement de valeur
 
-        fetch("/WT/back/networkAnalysis").then((res) => { // on récup la route
+        fetch('/WT/back/networkAnalysis').then((res) => { // on récup la route
         return res.json() // on transforme en json
 
         }).then((data) => {
@@ -37,8 +39,9 @@ function Analyse() {
                         </h3>
 
                         <div>
-                        
-
+                            {nombres.map((user) => (
+                                <div className="user">{user}</div>
+                            ))}
 
                         </div>
 
