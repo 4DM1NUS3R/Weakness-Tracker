@@ -17,7 +17,7 @@ function Analyse() {
             setlistePC(data)
         })
 
-    })
+    }, [])
     
     
     
