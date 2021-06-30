@@ -23,8 +23,6 @@ function App() {
         <Route path="/About" exact component={About} />
         <Route path="/Contact" exact component={Contact} />
         <Route path="/Analyse" exact component={Analyse} />
-        
-
 
 
       </Router>

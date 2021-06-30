@@ -6,20 +6,16 @@ function Analyse() {
 
     const nombres = ['one', 'two', 'three', 'viva l Algérie', 'iiish', 'nooon']
 
-    const [listePC, setlistePC] = useState({}) // on commence par initialiser la valeur de vari
-    useEffect(() => { // on définie ensuite ce qu'il se passse lors du changement de valeur
+    const [listePC, setlistePC] = useState({})
+    useEffect(() => {
 
-        fetch('/WT/back/networkAnalysis').then((res) => { // on récup la route
-        return res.json() // on transforme en json
+        fetch('/WT/back/networkAnalysis').then((res) => {
+        return res.json()
 
         }).then((data) => {
-            setlistePC(data) // on applique la valeur grace au setter définie plus haut
+            setlistePC(data)
         })
 
-    })
-    
-    console.log(listePC["VM-ALPHA"])
-    
 
     return (
         <div className="page">

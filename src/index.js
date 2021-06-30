@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+document.title = "Weakness Tracker"
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
