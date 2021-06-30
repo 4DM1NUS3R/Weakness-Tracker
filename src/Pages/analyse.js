@@ -16,6 +16,10 @@ function Analyse() {
             setlistePC(data)
         })
 
+    })
+    
+    
+    
 
     return (
         <div className="page">
