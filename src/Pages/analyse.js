@@ -4,7 +4,7 @@ import styles from './analyse.css';
 
 function Analyse() {
 
-    const nombres = ['one', 'two', 'three', 'viva l Algérie']
+    const nombres = ['one', 'two', 'three', 'viva l Algérie', 'iiish', 'nooon']
 
 
     const [listePC, setlistePC] = useState({})
@@ -17,7 +17,10 @@ function Analyse() {
             setlistePC(data)
         })
 
-    }, [])
+    })
+    
+    
+    
 
     return (
         <div className="page">
@@ -37,7 +40,7 @@ function Analyse() {
                             Terminaux
                         </h3>
 
-                        <div>
+                        <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap', marginLeft: '2%', marginRight: '2%'}}>
                             {nombres.map((user) => (
                                 <div className="user">{user}</div>
                             ))}
