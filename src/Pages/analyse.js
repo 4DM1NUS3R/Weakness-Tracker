@@ -12,9 +12,10 @@ function Analyse() {
 
     const [open, setOpen] = useState(false);
     const closeModal = () => setOpen(false);
+    const contentStyle = { background: 'rgb(24,24,24)', border: 'solid 3px rgb(4, 182, 78)'};
 
     /* Fin modal */
-
+ 
     const [listePC, setlistePC] = useState({})
     useEffect(() => {
 
@@ -77,16 +78,50 @@ function Analyse() {
                                 <div className="user">
 
                                     <div style= {{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px'}}> 
-                                        <Popup trigger={<button className="wssh" class="btn btn-success btn-sm" onClick={() => setOpen(o => !o)}> Détails</button>} modal nested>
+                                        <Popup trigger={<button onClick={() => setOpen(o => !o)} className= "capsule" class="btn btn-success btn-sm" > Détails</button>} {...{ contentStyle }} modal nested>
                                             <div>
-                                                <p style={{textAlign: 'Center', fontSize: '30px', fontWeight: '600'}}>  {nomPC} </p>
-                                                <p> <span style={{ fontWeight: '600'}}> Nom : </span> {nomPC} </p>
-                                                <p> <span style={{ fontWeight: '600'}}> IP : </span> 
+                                                <p style={{textAlign: 'Center', fontSize: '30px', fontWeight: '600', color: 'rgb(4, 182, 78)', borderBottom: 'solid 2px rgb(208,208,208)', marginLeft:' 1%', marginRight: '1%', marginTop: '12px', paddingBottom: '10px'}}>  {nomPC} </p>
+                                             
+
+                                                <p style={{color: 'white'}}> <span style={{ fontWeight: '600'}}> IP : </span> 
                                                     { listePC[nomPC]['ip'].map((nomIP) => (
                                                     <p> {nomIP} </p>)  )} 
                                                 </p> 
+                                                <p className="separateur"></p>
 
-                                                <p> <span style={{ fontWeight: '600'}}> Forwarding : </span> {listePC[nomPC]['forwarding'] ? 'Activé' : 'Désactivé' } </p>
+                                                <p style={{color: 'white'}}> <span style={{ fontWeight: '600'}}> Forwarding : </span> {listePC[nomPC]['forwarding'] ? 'Activé' : 'Désactivé' } </p>
+                                                <p className="separateur"></p>
+
+                                                <p style={{color: 'white'}}> <span style={{ fontWeight: '600'}}> Port connu : </span> {listePC[nomPC]['port']['known'] } </p>
+                                                <p className="separateur"></p>
+                                                <p style={{color: 'white'}}> <span style={{ fontWeight: '600'}}> Port dynamique : </span> {listePC[nomPC]['port']['dynamic'] } </p>
+                                                <p className="separateur" ></p>
+
+
+                                                <p style={{ textAlign: 'Center', fontSize: '20px', color: 'rgb(4, 182, 78)' }}> <span style={{  fontWeight: '600'}}> Règles  </span> </p>
+
+                                                <p style={{color: 'white'}}> <span style={{ fontWeight: '600'}}> NAT-ACCEPT : </span> {listePC[nomPC]['rules']['nat']['ACCEPT'].map((nomNATA) => (<p> {nomNATA} </p>) )} </p>
+                                                <p className="separateur" ></p>
+                                                <p style={{color: 'white'}}> <span style={{ fontWeight: '600'}}> NAT-DROP : </span> {listePC[nomPC]['rules']['nat']['DROP'].map((nomNATD) => (<p> {nomNATD} </p>) )} </p>
+                                                <p className="separateur" ></p>
+
+                                                <p style={{color: 'white'}}> <span style={{ fontWeight: '600'}}> FILTER-ACCEPT : </span> {listePC[nomPC]['rules']['filter']['ACCEPT'].map((nomFILTA) => (<p> {nomFILTA} </p>) )} </p>
+                                                <p className="separateur" ></p>
+                                                <p style={{color: 'white'}}> <span style={{ fontWeight: '600'}}> FILTER-DROP : </span> {listePC[nomPC]['rules']['filter']['DROP'].map((nomFILTD) => (<p> {nomFILTD} </p>) )} </p>
+                                                <p className="separateur" ></p>
+
+
+                                                <p style= {{textAlign: 'Center', fontSize: '20px', color: 'rgb(4, 182, 78)' }} > <span style={{ fontWeight: '600'}}> Serveurs </span>  </p>
+
+                                                <p style={{color: 'white'}}> <span style={{ fontWeight: '600'}}> Serveur HTTP - Etat : </span> {listePC[nomPC]['server']['HTTP']['state'] ? 'Activé' : 'Désactivé'} </p>
+                                                <p className="separateur" ></p>
+                                                <p style={{color: 'white'}}> <span style={{ fontWeight: '600'}}> Serveur DHCP - Etat : </span> {listePC[nomPC]['server']['DHCP']['state'] ? 'Activé' : 'Désactivé'} </p>
+                                                <p className="separateur" ></p>
+                                                <p style={{color: 'white'}}> <span style={{ fontWeight: '600'}}> Serveur DNS - Etat : </span> {listePC[nomPC]['server']['DNS']['state'] ? 'Activé' : 'Désactivé'} </p>
+                                                <p className="separateur" ></p>
+
+                                                <p style= {{textAlign: 'Center', fontSize: '20px', color: 'rgb(255,215,0)'}} > <span style={{ fontWeight: '600'}}> Description </span> </p>
+                                                
                                             </div>    
                                         </Popup>
                                         
@@ -97,7 +132,7 @@ function Analyse() {
                                     </div>
 
                                     <div>
-                                        <p> <span style={{ fontWeight: '600'}}> Nom : </span> {nomPC} </p>
+                                        <p style={{ textAlign: 'Center', fontWeight: '600', color: 'rgb(9, 126, 58)'}}> {nomPC} </p>
                                         <p> <span style={{ fontWeight: '600'}}> IP : </span> 
                                             { listePC[nomPC]['ip'].map((nomIP) => (
                                             <p> {nomIP} </p>)  )} 
