@@ -25,8 +25,8 @@ class NetworkAnalysis:
 
 
 # test
-net = NetworkAnalysis()
-print(net.network)
-for comp in net.network:
-    print("{}\n".format(comp))
-    print(net.network[comp]["description"])
+# net = NetworkAnalysis()
+# print(net.network)
+# for comp in net.network:
+#    print("{}\n".format(comp))
+#    print(net.network[comp]["description"])

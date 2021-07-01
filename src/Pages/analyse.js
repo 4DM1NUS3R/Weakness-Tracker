@@ -14,6 +14,7 @@ function Analyse() {
     const closeModal = () => setOpen(false);
     const contentStyle = { background: 'rgb(24,24,24)', border: 'solid 3px rgb(4, 182, 78)'};
 
+
     /* Fin modal */
  
     const [listePC, setlistePC] = useState({})
@@ -78,7 +79,7 @@ function Analyse() {
                                 <div className="user">
 
                                     <div style= {{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px'}}> 
-                                        <Popup trigger={<button onClick={() => setOpen(o => !o)} className= "capsule" class="btn btn-success btn-sm" > Détails</button>} {...{ contentStyle }} modal nested>
+                                        <Popup trigger={<button onClick={() => setOpen(o => !o) } className= "capsule" class="btn btn-success btn-sm" > Détails</button>} {...{ contentStyle }} modal nested>
                                             <div>
                                                 <p style={{textAlign: 'Center', fontSize: '30px', fontWeight: '600', color: 'rgb(4, 182, 78)', borderBottom: 'solid 2px rgb(208,208,208)', marginLeft:' 1%', marginRight: '1%', marginTop: '12px', paddingBottom: '10px'}}>  {nomPC} </p>
                                              
@@ -121,6 +122,7 @@ function Analyse() {
                                                 <p className="separateur" ></p>
 
                                                 <p style= {{textAlign: 'Center', fontSize: '20px', color: 'rgb(255,215,0)'}} > <span style={{ fontWeight: '600'}}> Description </span> </p>
+                                                <p style={{color: 'white', textAlign: 'justify'}}>  {listePC[nomPC]['description']} </p>
                                                 
                                             </div>    
                                         </Popup>
