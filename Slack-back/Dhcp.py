@@ -2,7 +2,7 @@ class Dhcp:
     is_dhcp = False
 
     def __init__(self, path):
-        self.is_dns = False
+        self.is_dhcp = False
         try:
             dhcp_file = open("%s/status.conf" % path, "r")
             dhcp_line = ""
