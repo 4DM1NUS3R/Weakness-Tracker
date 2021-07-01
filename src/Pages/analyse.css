@@ -34,20 +34,29 @@ body {
 .elementAnalyse {
   width: 100%;
   height: 100%;
+
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .user {
   box-shadow: 1px 1px 4px grey;
-  border-radius: 2px;
+  border-radius: 5px;
   padding: 5px;
 
   width: 250px;
   height: 150px;
   margin: 3%;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
   height: auto;
 }
 ::-webkit-scrollbar-track-piece {
@@ -57,4 +66,20 @@ body {
   height: 30px;
   background-color: rgb(4, 182, 78);
   border-radius: 13px;
+}
+
+/* Modal */
+
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+
+  width: 50%;
+  height: 40%;
+
+  padding: 5px;
+  border-radius: 4px;
+
+  overflow-x: hidden;
+  overflow-y: auto;
 }
