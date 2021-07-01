@@ -17,12 +17,16 @@ class NetworkAnalysis:
                           "port": comp_analysis.port.ports,
                           "server": {"HTTP": {"state": comp_analysis.http.is_http, "description": "work in progress"},
                                      "DHCP": {"state": comp_analysis.dhcp.is_dhcp, "description": "work in progress"},
-                                     "DNS": {"state": comp_analysis.dns.is_dns, "description": "work in progress"}}
+                                     "DNS": {"state": comp_analysis.dns.is_dns, "description": "work in progress"}},
+                          "description": comp_analysis.description
                           }
             self.network[comp_analysis.hostname.hostname] = comp_value
             comp_analysis.reset()
 
 
 # test
-# net = NetworkAnalysis()
-# print(net.network)
+net = NetworkAnalysis()
+print(net.network)
+for comp in net.network:
+    print("{}\n".format(comp))
+    print(net.network[comp]["description"])
