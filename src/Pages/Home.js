@@ -4,6 +4,8 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import data from "bootstrap/js/src/dom/data";
 
+import logo from './logo.gif'
+
 function Home(){
     const proprietes = {
       duration: 3500,
@@ -70,6 +72,13 @@ return(
 
               <div className="containerSlide">
               <Slide {...proprietes}>
+                <div className="each-slide">
+                  <div>
+                    <img src = {logo} 
+                    />
+                    
+                  </div>
+                </div>
                 <div className="each-slide">
                   <div>
                     <img src = 'https://i1.wp.com/devotics.fr/wp-content/uploads/2017/09/security.jpeg?fit=4576%2C3051&ssl=1' 

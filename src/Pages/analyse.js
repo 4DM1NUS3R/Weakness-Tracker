@@ -70,7 +70,10 @@ function Analyse() {
                         </button>
                     </div>
                     <div>
-                        <h3>
+                        <h3 style={{ fontSize:'40px', marginBottom: '4%', marginLeft: '5%', color:'rgb(15, 75, 40)' }}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" className="iconReseau" class="bi bi-diagram-3-fill m-2" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zm-6 8A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm6 0A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm6 0a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1z"/>
+                            </svg>
                             Terminaux
                         </h3>
 
@@ -81,7 +84,7 @@ function Analyse() {
                                     <div style= {{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px'}}> 
                                         <Popup trigger={<button onClick={() => setOpen(o => !o) } className= "capsule" class="btn btn-success btn-sm" > Détails</button>} {...{ contentStyle }} modal nested>
                                             <div>
-                                                <p style={{textAlign: 'Center', fontSize: '30px', fontWeight: '600', color: 'rgb(4, 182, 78)', borderBottom: 'solid 2px rgb(208,208,208)', marginLeft:' 1%', marginRight: '1%', marginTop: '12px', paddingBottom: '10px'}}>  {nomPC} </p>
+                                                <p style={{textAlign: 'Center', fontSize: '30px', fontWeight: '600', color: 'rgb(4, 182, 78)', borderBottom: 'solid 2px rgb(208,208,208)', marginLeft:' 1%', marginRight: '1%', marginTop: '12px', paddingBottom: '10px'}}>   {nomPC} </p>
                                              
 
                                                 <p style={{color: 'white'}}> <span style={{ fontWeight: '600'}}> IP : </span> 
@@ -93,9 +96,9 @@ function Analyse() {
                                                 <p style={{color: 'white'}}> <span style={{ fontWeight: '600'}}> Forwarding : </span> {listePC[nomPC]['forwarding'] ? 'Activé' : 'Désactivé' } </p>
                                                 <p className="separateur"></p>
 
-                                                <p style={{color: 'white'}}> <span style={{ fontWeight: '600'}}> Port connu : </span> {listePC[nomPC]['port']['known'] } </p>
+                                                <p style={{color: 'white'}}> <span style={{ fontWeight: '600'}}> Port connu : </span> {listePC[nomPC]['port']['known'].map((nomPortC) => (<p> {nomPortC} </p>)) } </p>
                                                 <p className="separateur"></p>
-                                                <p style={{color: 'white'}}> <span style={{ fontWeight: '600'}}> Port dynamique : </span> {listePC[nomPC]['port']['dynamic'] } </p>
+                                                <p style={{color: 'white'}}> <span style={{ fontWeight: '600'}}> Port dynamique : </span> {listePC[nomPC]['port']['dynamic'].map((nomPortA) => (<p> {nomPortA} </p>)) } </p>
                                                 <p className="separateur" ></p>
 
 
@@ -134,7 +137,7 @@ function Analyse() {
                                     </div>
 
                                     <div>
-                                        <p style={{ textAlign: 'Center', fontWeight: '600', color: 'rgb(9, 126, 58)'}}> {nomPC} </p>
+                                        <p style={{ textAlign: 'Center', fontWeight: '600', color: 'rgb(9, 126, 58)', textDecoration: 'underline'}}> {nomPC} </p>
                                         <p> <span style={{ fontWeight: '600'}}> IP : </span> 
                                             { listePC[nomPC]['ip'].map((nomIP) => (
                                             <p> {nomIP} </p>)  )} 
@@ -152,13 +155,7 @@ function Analyse() {
                     </div>
 
 
-                    <div>
-                        <h3>
-                            Rapport
-                        </h3>
-
-                        <p> </p>
-                    </div>
+                    
 
                 </div>
             </div>

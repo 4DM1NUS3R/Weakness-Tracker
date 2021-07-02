@@ -44,8 +44,8 @@ body {
   border-radius: 5px;
   padding: 5px;
 
-  width: 250px;
-  height: 150px;
+  width: 330px;
+  height: 210px;
   margin: 3%;
 
   overflow-x: hidden;
@@ -93,4 +93,10 @@ body {
   margin-right: 1%;
   text-align: center;
   border-bottom: solid 1px rgb(80, 80, 80);
+}
+
+/* FIn modal */
+
+.iconReseau {
+  color: rgb(15, 75, 40);
 }

@@ -48,18 +48,24 @@ body {
 
 img {
   border-radius: 4px;
-  width: 600px;
-  height: 380px;
+  width: 570px;
+  height: 420px;
 }
 
 .containerSlide {
-  width: 600px;
+  width: 570px;
   margin-right: 5%;
   margin-top: 5%;
 }
 
 .containerSlide img {
-  height: 380px;
+  height: 420px;
+  width: 570px;
+}
+
+.each-slide {
+  height: 420px;
+  width: 570px;
 }
 
 .reseauxGlobal {
