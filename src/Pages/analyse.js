@@ -124,8 +124,8 @@ function Analyse() {
                                                 <p style={{color: 'white'}}> <span style={{ fontWeight: '600'}}> Serveur DNS - Etat : </span> {listePC[nomPC]['server']['DNS']['state'] ? 'Activé' : 'Désactivé'} </p>
                                                 <p className="separateur" ></p>
 
-                                                <p style= {{textAlign: 'Center', fontSize: '20px', color: 'rgb(255,215,0)'}} > <span style={{ fontWeight: '600'}}> Description </span> </p>
-                                                <p style={{color: 'white', textAlign: 'justify'}}>  {listePC[nomPC]['description']} </p>
+                                                <p style= {{textAlign: 'Center', fontSize: '20px', color: 'rgb(255,215,0)'}} > <span style={{ fontWeight: '600', whiteSpace: "pre-wrap"}}> Description </span> </p>
+                                                <p style={{color: 'white', textAlign: 'justify'}}>  {listePC[nomPC]['description'].split("\n\n").map(str => <p>{str}</p>)} </p>
                                                 
                                             </div>    
                                         </Popup>
