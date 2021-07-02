@@ -5,7 +5,7 @@ import ComputerAnalysis
 class NetworkAnalysis:
     network = {}  # format {"hostname1": ComputerAnalysis1, "hostname2": ComputerAnalysis2}
 
-    def __init__(self, path="D:/efrei/cours/L3/BootCamp/fouretout"):
+    def __init__(self, path="C:/Users/rayw2/OneDrive/Documents/Cours/L3/S6/MasterCamp/Projet MC/fouretout"):
         self.network = {}
         for file in os.listdir(path):
             comp_analysis = ComputerAnalysis.ComputerAnalysis(
