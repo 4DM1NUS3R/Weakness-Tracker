@@ -82,7 +82,8 @@ def set_description(computerAnalysis):
             description += "{} port{} : ".format(("Le", "Les")[nb_port > 1], ("", "s")[nb_port > 1])
             for port in bad_port:
                 description += " {} ".format(port)
-            description += "devrai{}t être fermé{} pour la sécurité du système".format(("", "en")[nb_port > 1], ("", "s")[nb_port > 1])
+            description += "devrai{}t être fermé{} pour la sécurité du système\n\n".format(("", "en")[nb_port > 1], ("", "s")[nb_port > 1])
+        description += "Pour toute informations veuillez vous référer a la documentation correspondante dans l'onglet prévention.\n\n"
     return description
 
 
@@ -125,5 +126,5 @@ class ComputerAnalysis:
 
 
 # test
-comp = ComputerAnalysis("D:/efrei/cours/L3/BootCamp/fouretout/fich_hostname3")
-print(comp.description)
+# comp = ComputerAnalysis("D:/efrei/cours/L3/BootCamp/fouretout/fich_hostname3")
+# print(comp.description)
