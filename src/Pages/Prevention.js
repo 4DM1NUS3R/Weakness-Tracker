@@ -326,13 +326,51 @@ function Prevention() {
                                             <Card style={{ width: '100%' }}>
                                                 <Card.Header>
                                                     <Accordion.Toggle as={Button} eventKey="9" className="clickos">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plug-fill m-2" viewBox="0 0 16 16">
+                                                            <path d="M6 0a.5.5 0 0 1 .5.5V3h3V.5a.5.5 0 0 1 1 0V3h1a.5.5 0 0 1 .5.5v3A3.5 3.5 0 0 1 8.5 10c-.002.434-.01.845-.04 1.22-.041.514-.126 1.003-.317 1.424a2.083 2.083 0 0 1-.97 1.028C6.725 13.9 6.169 14 5.5 14c-.998 0-1.61.33-1.974.718A1.922 1.922 0 0 0 3 16H2c0-.616.232-1.367.797-1.968C3.374 13.42 4.261 13 5.5 13c.581 0 .962-.088 1.218-.219.241-.123.4-.3.514-.55.121-.266.193-.621.23-1.09.027-.34.035-.718.037-1.141A3.5 3.5 0 0 1 4 6.5v-3a.5.5 0 0 1 .5-.5h1V.5A.5.5 0 0 1 6 0z"/>
+                                                        </svg>
+                                                        Sécurisation des ports
+                                                    </Accordion.Toggle>
+                                                </Card.Header>
+                                                <Accordion.Collapse eventKey="9">
+                                                    <Card.Body style={{ textAlign: 'justify' }}>
+                                                    <span style ={{fontWeight: '500', color: 'rgb(4, 182, 78)'}}> Base de la compréhension des ports avec de leurs sécurisations/failles : </span> <br/>
+                                                    Un port permet à un ordinateur de savoir à quelle application envoyer chaque paquet réseau donc il identifie l’application ou le service auquel un paquet est destiné. <br/>
+                                                    Il n’existe aucun port naturellement sûr. C’est l’utilisation de ce port qui déterminera sa sécurisation. Ils doivent donc recevoir des mises à jour de sécurité et de correction. <br/> <br/>
+
+                                                    <span style ={{fontWeight: '500',  color: 'rgb(4, 182, 78)'}}>Exemples de ports vulnérables connus : </span> <br/>
+                                                        <svg style= {{ color: 'rgb(4, 182, 78)' }} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short m-1 " viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                                                        </svg>
+                                                    Le <span style={{ fontWeight: '500'}}> port 21 </span> est un protocole de transfert de fichiers. Si ce port FTP non sécurisé héberge un serveur FTP alors 
+                                                    il y a une grosse faille de sécurité. Ces serveurs FTP présenteront des vulnérabilités donnant accès à une authentification anonyme ou 
+                                                    d’autres failles. <br/>
+
+                                                    <svg style= {{ color: 'rgb(4, 182, 78)' }} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short m-1 " viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                                                    </svg>
+                                                    Le <span style={{ fontWeight: '500'}}> port 53 </span> qui sert au service de noms de domaine (traduire une adresse IP – numéro d’identification d’un ordinateur – en un site web 
+                                                    comme on connait comme www.exemple.com) . Ce port d’exfiltration est très utilisé car ce service est rarement surveillé. 
+                                                    Les hackers déguisent les données volées en trafic DNS (Service de noms de domaine) et les envoie à leur propre serveur DNS. <br/> <br/>
+
+                                                    Pour sécuriser ces ports, le mieux est de les fermer sauf s’il y a une analyse de rentabilisation documentée. 
+                                                    Il faut surveiller les ports en cours d’utilisation sur le réseau pour détecter toute anomalie ou les ports inexplicablement ouverts.
+                                                    </Card.Body>
+                                                </Accordion.Collapse>
+                                            </Card>
+                                        </div>
+
+                                        <div style={{ marginBottom: '10px' }}>
+                                            <Card style={{ width: '100%' }}>
+                                                <Card.Header>
+                                                    <Accordion.Toggle as={Button} eventKey="10" className="clickos">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right m-2" viewBox="0 0 16 16">
                                                             <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z" />
                                                         </svg>
                                                         Méthode DAI (Dynamic ARP Inspection)
                                                     </Accordion.Toggle>
                                                 </Card.Header>
-                                                <Accordion.Collapse eventKey="9">
+                                                <Accordion.Collapse eventKey="10">
                                                     <Card.Body style={{ textAlign: 'justify' }}>
                                                         Cette méthode utilise la base du DHCP snooping pour vérifier la conformité des réponses de chaque paquet ARP envoyé.
                                                         On compare l’adresse IP émettrice du paquet à celle attribuée par le serveur DHCP mais si les adresses ne sont pas les mêmes
