@@ -68,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### how to make Weakness tracker work ?
+- Client results are in WT file but it is possible to make your own using the WTCtl.sh client.
+- To make client worksyou need to edit file's first variables to make him return file to the server (ip configuretion and file saving path).
+- Launch react and flask server (yarn start and yarn start-back). If proxy isn't established, proxy parameter need to be added in package.json (proxy : http://localhost:5000).
+- Change path in NetworkAnalysis.py in the class constructor (line 8) the path in which you stored bash client results.
+- Search http://localhost:3000 on browser.
